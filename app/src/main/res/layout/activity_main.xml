@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textViewAccountToken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textViewBarrierUuid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textViewBarrierType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <TextView
+                android:id="@+id/textViewBarrierNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"/>
+            <Button
+                android:id="@+id/buttonAccountActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Account menu"/>
+            <Button
+                android:id="@+id/buttonBarrierActivity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Barrier menu"/>
+            <Button
+                android:id="@+id/buttonOpenRelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Open Relay"
+                />
+            <Button
+                android:id="@+id/buttonCloseRelay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Close Relay"/>
+            <TextView
+                android:id="@+id/textviewBarrierStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="40sp"
+                android:text="Barrier closed"
+                />
+
+            <TextView
+                android:id="@+id/textViewCollectionStatus"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
